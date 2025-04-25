@@ -1,0 +1,288 @@
+/*----------------- Epilogue-font-family URL---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Epilogue", sans-serif;
+}
+
+/* nav-start --------- */
+.mainNavDiv {
+    background-color: white;
+}
+
+.primary-nav {
+    padding: 10px 0;
+}
+
+.primary-nav .container {
+    border-bottom: 2px solid #3FCABB;
+    padding-bottom: 15px;
+}
+
+.primary-nav .primartNavLinks {
+    text-align: right;
+}
+
+.primary-nav .primartNavLinks a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.primary-nav .primartNavLinks a:hover {
+    color: #3071C8;
+}
+
+.primary-nav .primartNavLinks a:nth-child(1) {
+    border-right: 1px solid;
+    padding: 10px;
+}
+
+.primary-nav .primartNavLinks a:nth-child(2) {
+    padding-left: 10px;
+}
+
+.navbar {
+    margin: -15px 90px 0 90px;
+    max-width: 100%;
+}
+
+.navbar .navbar-brand img {
+    width: 300px;
+    transition: all .5s ease;
+}
+
+.navbar ul {
+    margin-right: 15px;
+}
+
+.navbar ul a {
+    color: black;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.navbar .navContactBtn a {
+    border-radius: 50px;
+    background-color: #3071C7;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 160px;
+}
+
+.navbar ul a:hover {
+    color: rgb(48, 113, 200) !important;
+}
+
+.navbar .navContactBtn a:hover {
+    color: white;
+    background-color: black;
+}
+
+.navbar .navContactBtn a:active {
+    box-shadow: none;
+}
+
+.navbar #menu {
+    font-size: 30px;
+    font-weight: 800;
+    color: #464242;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar ul a {
+        font-size: 15px;
+    }
+
+    .navbar .navContactBtn a {
+        border-radius: 50px;
+        background-color: #3071C7;
+        font-weight: 700;
+        color: white;
+        font-size: 16px;
+        padding: 8px;
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .navbar {
+        margin: -15px 50px 0 50px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1030px) {
+    .navbar ul a {
+        font-size: 14px;
+    }
+
+    .navbar .navContactBtn a {
+        border-radius: 40px;
+        background-color: #3071C7;
+        font-weight: 400;
+        color: white;
+        font-size: 15px;
+        padding: 5px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .primary-nav .primartNavLinks {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        margin: -15px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+   
+    .navbar .navbar-brand img {
+        width: 200px;
+    }
+}
+
+/* nav-end --------- */
+
+
+
+
+
+
+
+
+
+/* firstSection-start ------ */
+.firstSection {
+   margin-top: 140px;
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: linear-gradient(to right, #3174c7bd 1%, transparent 99%), url(./Images/global-nurse-gateway-home-hero.jpg);
+    background-size: cover;
+    object-fit: cover;
+}
+
+.firstSection h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 150px;
+    width: 60%;
+}
+.firstSection a{
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    transition: all .3s ease;
+}
+.firstSection .join{
+    padding: 15px;
+    width: 220px;
+    border: 2px solid white;
+}
+.firstSection .join:hover{
+  background-color: black;
+  color: white;
+}
+.firstSection .partner{
+ background-color: #3FCABB;
+ width: 270px;
+ padding: 15px;
+ margin-left: 20px;
+}
+.firstSection .partner:hover{
+    background-color: black;
+    color: white;
+}
+@media  screen and (max-width: 992px) {
+  .firstSection h1{
+    width: 90%;
+    text-align: center;
+  }
+}
+@media  screen and (max-width: 830px) {
+    .firstSection h1{
+        font-size: 45px;
+    }
+    .firstSecBtns{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* flex-direction: column; */
+    }
+    .firstSection a{
+        width: 100%;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 16px;
+        color: white;
+        margin-top: 20px;
+        transition: all .3s ease;
+        padding: 3px;
+    }
+}
+@media  screen and (max-width: 450px) {
+    .firstSection {
+        margin-top: 120px;
+         height: 65%;
+         background-position: left;
+         background-repeat: no-repeat;
+         width: 100%;
+         background-image: linear-gradient(to right, #3385C4 80%, #1253a334 99%), url(./Images/global-nurse-gateway-home-hero.jpg);
+         background-size: cover;
+         object-fit: cover;
+        }
+        .firstSection h1{
+            font-size: 35px;
+         padding: 80px 20px 0 20px;
+         text-align: center;
+     }
+    .firstSecBtns{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .firstSection .firstSecBtns .partner{
+        margin-right: 15px;
+    }
+}
+@media  screen and (max-width: 400px) {
+    .firstSection{
+        height: 75%;
+    }
+  .firstSection h1{
+    font-size: 35px;
+    width: 100%;
+  }
+}
+/* firstSection-end ------ */
