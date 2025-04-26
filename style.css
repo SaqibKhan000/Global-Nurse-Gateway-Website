@@ -17,6 +17,7 @@ body {
 /* nav-start --------- */
 .mainNavDiv {
     background-color: white;
+    border-bottom: 1px solid #3fcabca1;
 }
 
 .primary-nav {
@@ -161,7 +162,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-   
+
     .navbar .navbar-brand img {
         width: 200px;
     }
@@ -179,8 +180,8 @@ body {
 
 /* firstSection-start ------ */
 .firstSection {
-   margin-top: 140px;
-    height: 85%;
+    margin-top: 140px;
+    min-height: 95%;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -196,7 +197,8 @@ body {
     padding-top: 150px;
     width: 60%;
 }
-.firstSection a{
+
+.firstSection a {
     border-radius: 50px;
     font-weight: 700;
     font-size: 20px;
@@ -204,42 +206,54 @@ body {
     margin-top: 20px;
     transition: all .3s ease;
 }
-.firstSection .join{
+
+.firstSection .join {
     padding: 15px;
     width: 220px;
     border: 2px solid white;
 }
-.firstSection .join:hover{
-  background-color: black;
-  color: white;
-}
-.firstSection .partner{
- background-color: #3FCABB;
- width: 270px;
- padding: 15px;
- margin-left: 20px;
-}
-.firstSection .partner:hover{
+
+.firstSection .join:hover {
     background-color: black;
     color: white;
 }
-@media  screen and (max-width: 992px) {
-  .firstSection h1{
-    width: 90%;
-    text-align: center;
-  }
+
+.firstSection .partner {
+    background-color: #3FCABB;
+    width: 270px;
+    padding: 15px;
+    margin-left: 20px;
 }
-@media  screen and (max-width: 830px) {
-    .firstSection h1{
+
+.firstSection .partner:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .firstSection {
+        min-height: 100%;
+    }
+
+    .firstSection h1 {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .firstSection h1 {
         font-size: 45px;
     }
-    .firstSecBtns{
+
+    .firstSecBtns {
         display: flex;
         align-items: center;
         justify-content: space-between;
         /* flex-direction: column; */
     }
-    .firstSection a{
+
+    .firstSection a {
         width: 100%;
         border-radius: 50px;
         font-weight: 600;
@@ -250,39 +264,488 @@ body {
         padding: 3px;
     }
 }
-@media  screen and (max-width: 450px) {
+
+@media screen and (max-width: 450px) {
     .firstSection {
         margin-top: 120px;
-         height: 65%;
-         background-position: left;
-         background-repeat: no-repeat;
-         width: 100%;
-         background-image: linear-gradient(to right, #3385C4 80%, #1253a334 99%), url(./Images/global-nurse-gateway-home-hero.jpg);
-         background-size: cover;
-         object-fit: cover;
-        }
-        .firstSection h1{
-            font-size: 35px;
-         padding: 80px 20px 0 20px;
-         text-align: center;
-     }
-    .firstSecBtns{
+        height: 65%;
+        background-position: left;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-image: linear-gradient(to right, #3385C4 80%, #1253a334 99%), url(./Images/global-nurse-gateway-home-hero.jpg);
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    .firstSection h1 {
+        font-size: 35px;
+        padding: 80px 20px 0 20px;
+        text-align: center;
+    }
+
+    .firstSecBtns {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
     }
-    .firstSection .firstSecBtns .partner{
+
+    .firstSection .firstSecBtns .partner {
         margin-right: 15px;
     }
 }
-@media  screen and (max-width: 400px) {
-    .firstSection{
+
+@media screen and (max-width: 400px) {
+    .firstSection {
         height: 75%;
     }
-  .firstSection h1{
-    font-size: 35px;
+
+    .firstSection h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+}
+
+/* firstSection-end ------ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* second-section-start ---------- */
+.secondSection {
+    padding: 100px 0;
+}
+
+.secondSection .secondSecH1 {
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(48, 113, 200);
+}
+
+.secondSection .secondSecP {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    width: 80%;
+    margin: 10px auto;
+}
+
+.secondSection .card {
+    background-color: #3BAFBF;
+    color: white;
+    min-height: 350px;
+    width: 98%;
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.secondSection .card img {
+    margin-top: 15px;
+}
+
+.secondSection .card h3 {
+    margin-top: 18px;
+    font-size: 26px;
+}
+
+.secondSection .card p {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.secondSection .seconsSecBtn a {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #3071C7;
+    border-radius: 150px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    transition: .3s ease;
+}
+
+.secondSection .seconsSecBtn a:hover {
+    background-color: black;
+}
+
+.secondSection .seconsSecBtn a:active {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 400px) {
+    .secondSection .secondSecH1 {
+        font-size: 23px;
+    }
+
+    .secondSection .secondSecP {
+        font-size: 15px;
+    }
+
+    .secondSection .card h3 {
+        font-size: 20px;
+    }
+
+    .secondSection .card p {
+        font-size: 15px;
+    }
+
+    .secondSection .card {
+        min-height: 200px;
+        padding-bottom: 20px;
+    }
+}
+
+/* second-section-end ---------- */
+
+
+
+
+
+
+
+/* third-section-start ------------ */
+.thirdSection {
     width: 100%;
+    padding-bottom: 50px;
+}
+
+.thirdSection .thirdSectionImg {
+    width: 530px;
+    position: relative;
+}
+
+.thirdSection .thirdSectionImg img {
+    width: 100%;
+}
+
+.thirdSection #thirdSectionCards h1 {
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(48, 113, 200);
+}
+
+.thirdSection #thirdSectionCards .card {
+    background-color: #EAF1F9;
+    border: none;
+    padding: 15px 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.thirdSection #thirdSectionCards #sectionThirdIconH3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.thirdSection #thirdSectionCards .card h3 {
+    font-size: 26px;
+    color: rgb(48, 113, 200);
+    font-weight: 600;
+}
+
+.thirdSection #thirdSectionCards .card p {
+    font-size: 17px;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    margin-left: 36px;
+}
+
+.thirdSection #thirdSectionCards .card i {
+    color: #3BAFBF;
+    border: 1px solid #3BAFBF;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.thirdSection .thirdSectionImg a {
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background-color: #3071C8;
+    padding: 13px 10px;
+    position: absolute;
+    bottom: -40px;
+    left: 20%;
+    transition: all .3s ease;
+    width: 60%;
+}
+
+.thirdSection .thirdSectionImg a:hover {
+    background-color: black;
+}
+
+.thirdSection .thirdSectionImg a:active {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .thirdSection .thirdSectionImg a {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 8px;
+        bottom: -15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .thirdSection #thirdSectionCards {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .thirdSection #thirdSectionCards h1 {
+        font-size: 30px;
+    }
+
+    .thirdSection #thirdSectionCards .card h3 {
+        font-size: 18px;
+    }
+
+    .thirdSection #thirdSectionCards .card p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .thirdSection .thirdSectionImg a {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 8px;
+        bottom: -15px;
+    }
+}
+
+/* third-section-end ------------ */
+
+
+
+
+
+
+
+/* fourth-section-start ---------- */
+.fourthSection {
+    margin: 70px 0;
+    width: 100%;
+    background-color: #3695C3;
+}
+
+.fourthSection .carousel {
+    width: 100%;
+    text-align: center;
+    min-height: 450px;
+    padding: 20px 0;
+}
+
+.fourthSection .carousel .carousel-item {
+    transition: 1s ease;
+    margin-top: 50px;
+}
+
+.fourthSection .carousel .carousel-item p {
+    width: 70%;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fourthSection #quote {
+    position: relative;
+    top: 30px;
+    width: 60px;
+}
+
+.fourthSection .carousel .carousel-item .caption {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 558px) {
+    .fourthSection .carousel .carousel-item p {
+        font-size: 13px;
+    }
+}
+
+/* fourth-section-end ---------- */
+
+
+
+
+
+
+
+
+
+/* fifth-section-start ---------- */
+.fifthSection {
+    width: 100%;
+    padding: 50px 0 100px 0;
+}
+
+.fifthSection .fifthSectionTopH1 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #3071C8;
+}
+
+.fifthSection .fifthSectionTopP {
+    font-size: 17px;
+    font-weight: 400;
+    width: 70%;
+    color: rgb(51, 51, 51);
+    margin: 10px auto;
+}
+
+.fifthSection .card {
+    margin-top: 40px;
+    text-align: center;
+    border: 1px solid #3BAFBF;
+    width: 100%;
+    padding: 15px;
+    min-height: 250px;
+}
+
+.fifthSection .card h1 {
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(59, 175, 191);
+}
+
+.fifthSection .card p {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+
+@media screen and (max-width: 558px) {
+    .fifthSection .fifthSectionTopP {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .fifthSection .fifthSectionTopH1 {
+        font-size: 25px;
+    }
+}
+
+/* fifth-section-end ---------- */
+
+
+
+
+
+
+
+/* sixth-section-start --------- */
+.sixthSection .sixthSectionGapDiv {
+    background: linear-gradient(to right, #3175C7 40%, #3AAFBF);
+    padding: 30px 0;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sixthSection h1 {
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+}
+
+.sixthSection p {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    margin-top: 18px;
+}
+.sixthSection a{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #3071C8;
+    border-radius: 50px;
+    padding: 15px 10px;
+    width: 70%;
+    transition: .3s ease;
+}
+.sixthSection a:hover{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 992px) {
+    .sixthSection a{
+        background-color: #29b2f7;
+    }
+}
+@media screen and (max-width: 400px) {
+.sixthSection p{
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 450px) {
+  .sixthSection a{
+    font-size: 15px;
+    font-weight: 500;
   }
 }
-/* firstSection-end ------ */
+/* sixth-section-end --------- */
+
+
+
+
+
+
+
+
+
+
+/* footer-start ----------- */
+footer{
+    padding: 50px 0 20px 0;
+    background-color: #EAF1F9;
+}
+footer p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+footer a{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+footer i{
+    font-size: 20px;
+    width: 40px;
+    padding: 10px 25px 10px 15px;
+    aspect-ratio: 1;
+    transition: .3s ease;
+}
+footer i:hover{
+    background-color: #083d83;
+    color: white;
+}
+/* footer-end ----------- */
