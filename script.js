@@ -12,6 +12,8 @@ function changeIcon(){
 }
 
 
+
+
 // FOR SCROLL /////////////////////////
 window.addEventListener("scroll", function () {
     let logo = document.querySelector("#logo");
@@ -24,3 +26,34 @@ window.addEventListener("scroll", function () {
       }
     }
   });
+
+
+
+
+
+
+// FOR FORMS //////////////////////////
+let radio1 = document.querySelector("#signupradio1");
+let radio2 = document.querySelector("#signupradio2");
+let formRow = document.querySelector(".signUpSecondSection #firstRow");
+let otherFormRow = document.querySelector(".signUpSecondSection #otherRow");
+
+function showForm() {
+    formRow.classList.remove("displayNone");
+    formRow.classList.add("displayBlock");
+    otherFormRow.classList.remove("displayBlock");
+    otherFormRow.classList.add("displayNone");
+}
+
+function showOtherForm() {
+    otherFormRow.classList.remove("displayNone");
+    otherFormRow.classList.add("displayBlock");
+    formRow.classList.remove("displayBlock");
+    formRow.classList.add("displayNone");
+}
+
+
+window.onload = showForm;
+
+radio1.addEventListener("click", showForm);
+radio2.addEventListener("click", showOtherForm);
